@@ -8,8 +8,9 @@
 5.times do
     CriptoInfo.create({
         name: Faker::Currency.name,
-        symbol: 'BTC',
+        symbol: Faker::Alphanumeric.alpha(3),
         last_updated: Faker::Time.between(3.days.ago, Date.today, :all),
-        price: '25200'        
+        price: rand()*3000,
+        api_id: rand() * 12,        
     })
 end
