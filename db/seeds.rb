@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+5.times do
+    CriptoInfo.create({
+        name: Faker::Currency.name,
+        symbol: 'BTC',
+        last_updated: Faker::Time.between(3.days.ago, Date.today, :all),
+        price: '25200'        
+    })
+end
