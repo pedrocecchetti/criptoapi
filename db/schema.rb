@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_14_155329) do
+ActiveRecord::Schema.define(version: 2019_06_14_143534) do
 
   create_table "cripto_infos", force: :cascade do |t|
     t.string "name"
     t.string "symbol"
     t.datetime "last_updated"
-    t.string "price"
+    t.float "price"
+    t.integer "api_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "api_id"
   end
 
 end
