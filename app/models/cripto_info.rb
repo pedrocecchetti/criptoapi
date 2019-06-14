@@ -1,0 +1,2 @@
+class CriptoInfo < ApplicationRecord
+end
