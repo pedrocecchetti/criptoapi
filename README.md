@@ -27,6 +27,8 @@ To start the api on a development server do as it follows:
 5. Start the API server with:
 ```rails s```
 
+This Application will use https://coinmarketcap.com/api/ , and for that you'll need to generate a api key and ste the env Var API_KEY to the value you generated.
+
 
 ## API USAGE
 
@@ -55,4 +57,4 @@ The API has 2 main routes:
 
 ### 2. The sercond route is a Route to update the Data in the DB.
 - To use you should send a GET request to `localhost:3000/api/v1/updatedatabase`
-- The get request to this route will update the records on the database.
+- The get request to this route will update the records on the database.    
