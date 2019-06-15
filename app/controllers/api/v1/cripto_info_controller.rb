@@ -10,7 +10,7 @@ module Api
 
             def updatecriptoinfo
                 # Defining API KEY to make the get request
-                api_key = '618a961a-29df-4ea4-96e1-f0c53b35d2fd'
+                api_key = ENV["API_KEY"]
                 
                 # Building API Key
                 uri = URI('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=30&convert=USD&CMC_PRO_API_KEY=' + api_key)
