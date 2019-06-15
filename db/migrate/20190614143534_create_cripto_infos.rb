@@ -4,7 +4,8 @@ class CreateCriptoInfos < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :symbol
       t.datetime :last_updated
-      t.string :price
+      t.float :price
+      t.integer :api_id
 
       t.timestamps
     end
